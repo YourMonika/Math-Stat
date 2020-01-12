@@ -44,10 +44,10 @@ def Geometric(p):
     return round(Exponential(rate))
 
 setupExpTables()
-file = open("Geom.txt", "w")
+"""file = open("Geom.txt", "w")
 for i in range(10000):
     file.write(str(Geometric(0.3)) + " ")
-file.close()
+file.close()"""
 file = open("Geom.txt", "r")
 data1 = file.read()
 data1 = "".join(data1)
