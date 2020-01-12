@@ -48,11 +48,18 @@ setupExpTables()
 for i in range(10000):
     file.write(str(Geometric(0.3)) + " ")
 file.close()"""
-file = open("Geom.txt", "r")
+"""file = open("Geom.txt", "r")
 data1 = file.read()
 data1 = "".join(data1)
 data1 = list(map(float, data1.split()))
 
 plt.figure(figsize = (20, 8))
 plt.subplot(1,2,1).hist(data1, bins = 50)
-plt.show()
+plt.show()"""
+
+smp = [5, 10, 100, 1000, 10000]
+for i in range(len(smp)):
+    for j in range(1, 6):
+        file = open("Geom{}_{}.txt".format(smp[i], j), "w")
+        for k in range(smp[i]):
+            file.write(str(Geometric(0.2)) + ' ')
