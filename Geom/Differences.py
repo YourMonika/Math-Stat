@@ -3,7 +3,7 @@ for i in range(5):
     disp = []
     data = []
     for j in range(len(num)):
-        with open("Geom{}_{}.txt".format(num[i], j+1)) as f:
+        with open("{}_{}.txt".format(num[i], j+1)) as f:
             for line in f:
                 data.append(list([float(x) for x in line.split()]))
     for k in range(len(data)):

@@ -20,7 +20,7 @@ for k1 in range(len(smp)):
     var = []
     maxs = []
     for i in range(len(smp)):
-        file = open('Erl{}_{}.txt'.format(smp[k1], i+1),'r')
+        file = open('C:\\Users\MI\\Documents\\GitHub\\Math-Stat\\Geom\\Geom{}_{}.txt'.format(smp[k1], i+1),'r')
         data = file.read()
         data = ''.join(data)
         data = data.split()
